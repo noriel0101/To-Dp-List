@@ -40,3 +40,198 @@
 .read-the-docs {
   color: #888;
 }
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.login-card,
+.todo-card {
+  width: min(100%, 520px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(16px);
+  color: inherit;
+}
+
+.login-card h1,
+.todo-card h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+}
+
+.login-card p,
+.todo-card p {
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 1.5rem;
+}
+
+.form-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+label {
+  display: grid;
+  gap: 0.5rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 0.95rem 1rem;
+  color: inherit;
+  font: inherit;
+}
+
+input:focus {
+  outline: 2px solid #646cff;
+  outline-offset: 2px;
+}
+
+button {
+  min-height: 3rem;
+  border: none;
+  border-radius: 14px;
+  padding: 0 1.25rem;
+  font-weight: 600;
+  color: white;
+  background: #646cff;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  background: #535bf2;
+}
+
+button:focus-visible {
+  outline: 3px solid #8f96ff;
+  outline-offset: 2px;
+}
+
+.primary-button {
+  background: #646cff;
+}
+
+.primary-button:hover {
+  background: #535bf2;
+}
+
+.secondary-button {
+  background: #ffb74d;
+  color: #1f1f1f;
+}
+
+.secondary-button:hover {
+  background: #ff9f1c;
+}
+
+.danger-button {
+  background: #ff4d4f;
+}
+
+.danger-button:hover {
+  background: #e63946;
+}
+
+.delete-button {
+  border: none;
+  color: white;
+}
+
+.todo-title {
+  text-align: center;
+  color: #000;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.75rem 1.25rem;
+  border-radius: 18px;
+  margin: 0 auto 1.5rem;
+  display: inline-block;
+}
+
+.todo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.todo-header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.todo-list {
+  margin-top: 1.5rem;
+}
+
+.todo-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.todo-table th,
+.todo-table td {
+  padding: 1rem 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: left;
+}
+
+.todo-table th {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 600;
+}
+
+.todo-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.todo-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.todo-table tbody tr.completed td {
+  opacity: 0.75;
+}
+
+.checkbox-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.delete-button {
+  background: #ff4d4f;
+  border: none;
+  color: white;
+}
+
+.error-message {
+  color: #ff6b6b;
+  font-size: 0.95rem;
+}
+
+.empty-state {
+  color: rgba(255, 255, 255, 0.7);
+}
